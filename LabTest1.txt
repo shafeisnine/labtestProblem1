@@ -1,0 +1,44 @@
+// psudo code
+function getTotalCost(startTime, targetEndTime) {
+    let peaktime = 9.00.00 am to 10.59.59 pm;
+    let offPeakTime = 11.00.00 pm to 8.59.59 am 
+    let endTime = startTime + 20 second
+    totalPoisha = 0;
+  
+    while(endTime <= targetEndTime) {
+      if(endtime is peak or overlap) => totalPoisha = totalPoisha + 30
+      else => totalPoisha = totalPoisha + 20
+      totalPoisha = endTime + 20 second
+    }
+    
+    const totalCost = convert totalPoisha to TK
+    return totalCost
+  }
+
+
+// attempt answer
+
+function getTotalCost(stTime, tEndTime) 
+ {
+     let startTime = stTime.getTime();
+     let targetEndTime = tEndTime.getTime();  
+
+  let diff =(targetEndTime - startTime) / 1000;
+  diff /= 60;
+  let diffinSecond = diff * 60;
+ 
+  let pulsetime = diffinSecond / 20;
+  let callcost = pulsetime * 30 ;
+  let callcostIntaka = callcost / 100;
+  console.log(callcostIntaka, "taka");
+  
+ 
+  return callcostIntaka;
+  
+ }
+
+ stTime = new Date("10 12, 2014 11:11:12");
+ tEndTime = new Date("10 12, 2014 11:13:14");
+console.log(getTotalCost(stTime, tEndTime));
+
+
